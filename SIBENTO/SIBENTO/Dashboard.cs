@@ -40,6 +40,8 @@ namespace SIBENTO
             ActiveDashboard.Visible = true;
             ActivePegawai.Visible = false;
             ActiveService.Visible = false;
+            ActiveSparepart.Visible = false;
+            ActiveUser.Visible = false;
 
             _obj = this;
             //btnPegawai.Hide();
@@ -48,7 +50,7 @@ namespace SIBENTO
             //UCDashboard dashboard = new UCDashboard();
             UCDashboard.Instance.Dock = DockStyle.Fill;
             PanelContainer.Controls.Add(UCDashboard.Instance);
-            PanelContainer.Controls.Add(UCPegawaiAdd.Instance);
+            //PanelContainer.Controls.Add(UCPegawaiAdd.Instance);
             
 
         }
@@ -70,6 +72,8 @@ namespace SIBENTO
             ActiveDashboard.Visible = true;
             ActivePegawai.Visible = false;
             ActiveService.Visible = false;
+            ActiveSparepart.Visible = false;
+            ActiveUser.Visible = false;
         }
 
         private void btnPegawai_Click(object sender, EventArgs e)
@@ -89,42 +93,72 @@ namespace SIBENTO
             ActiveDashboard.Visible = false;
             ActivePegawai.Visible = true;
             ActiveService.Visible = false;
+            ActiveSparepart.Visible = false;
+            ActiveUser.Visible = false;
         }
 
         private void btnService_Click(object sender, EventArgs e)
         {
-            if (!PanelContainer.Controls.Contains(UCService.Instance))
+            if (!PanelContainer.Controls.Contains(UCJasaService.Instance))
             {
-                PanelContainer.Controls.Add(UCService.Instance);
-                UCService.Instance.Dock = DockStyle.Fill;
-                UCService.Instance.BringToFront();
+                PanelContainer.Controls.Add(UCJasaService.Instance);
+                PanelContainer.Controls.Add(UCServiceForm.Instance);
+                UCJasaService.Instance.Dock = DockStyle.Fill;
+                UCJasaService.Instance.BringToFront();
             }
             else
             {
-                UCService.Instance.BringToFront();
+                UCJasaService.Instance.BringToFront();
             }
             //PanelContainer.Controls["UCPegawai"].BringToFront();
             ActiveDashboard.Visible = false;
             ActivePegawai.Visible = false;
             ActiveService.Visible = true;
+            ActiveSparepart.Visible = false;
+            ActiveUser.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSparepart_Click(object sender, EventArgs e)
         {
-            if (!PanelContainer.Controls.Contains(UCService.Instance))
+            if (!PanelContainer.Controls.Contains(UCSparepart.Instance))
             {
-                PanelContainer.Controls.Add(UCService.Instance);
-                UCService.Instance.Dock = DockStyle.Fill;
-                UCService.Instance.BringToFront();
+                PanelContainer.Controls.Add(UCSparepart.Instance);
+                PanelContainer.Controls.Add(UCSparepartForm.Instance);
+                UCSparepart.Instance.Dock = DockStyle.Fill;
+                UCSparepart.Instance.BringToFront();
             }
             else
             {
-                UCService.Instance.BringToFront();
+                UCSparepart.Instance.BringToFront();
             }
             //PanelContainer.Controls["UCPegawai"].BringToFront();
             ActiveDashboard.Visible = false;
             ActivePegawai.Visible = false;
-            ActiveService.Visible = true;
+            ActiveService.Visible = false;
+            ActiveSparepart.Visible = true;
+            ActiveUser.Visible = false;
+
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            if (!PanelContainer.Controls.Contains(UCUser.Instance))
+            {
+                PanelContainer.Controls.Add(UCUser.Instance);
+                UCUser.Instance.Dock = DockStyle.Fill;
+                UCUser.Instance.BringToFront();
+            }
+            else
+            {
+                UCUser.Instance.BringToFront();
+            }
+
+            //PanelContainer.Controls["UCPegawai"].BringToFront();
+            ActiveDashboard.Visible = false;
+            ActivePegawai.Visible = false;
+            ActiveService.Visible = false;
+            ActiveSparepart.Visible = false;
+            ActiveUser.Visible = true;
         }
     }
 }

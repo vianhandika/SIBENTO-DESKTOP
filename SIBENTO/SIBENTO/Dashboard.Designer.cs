@@ -47,6 +47,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.ActiveService = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnSparepart = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.ActiveSparepart = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnUser = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.ActiveUser = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.PanelContainer = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelTop.SuspendLayout();
@@ -58,6 +66,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.btnService.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.btnSparepart.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.btnUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,6 +130,8 @@
             this.flowLayoutPanel1.Controls.Add(this.btnDashboard);
             this.flowLayoutPanel1.Controls.Add(this.btnPegawai);
             this.flowLayoutPanel1.Controls.Add(this.btnService);
+            this.flowLayoutPanel1.Controls.Add(this.btnSparepart);
+            this.flowLayoutPanel1.Controls.Add(this.btnUser);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 79);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(193, 353);
@@ -255,6 +269,94 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.btnService_Click);
             // 
+            // btnSparepart
+            // 
+            this.btnSparepart.Controls.Add(this.label6);
+            this.btnSparepart.Controls.Add(this.ActiveSparepart);
+            this.btnSparepart.Controls.Add(this.pictureBox5);
+            this.btnSparepart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSparepart.Location = new System.Drawing.Point(3, 165);
+            this.btnSparepart.Name = "btnSparepart";
+            this.btnSparepart.Size = new System.Drawing.Size(194, 48);
+            this.btnSparepart.TabIndex = 7;
+            this.btnSparepart.Click += new System.EventHandler(this.btnSparepart_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(70, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 19);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Sparepart";
+            this.label6.Click += new System.EventHandler(this.btnSparepart_Click);
+            // 
+            // ActiveSparepart
+            // 
+            this.ActiveSparepart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(229)))));
+            this.ActiveSparepart.Location = new System.Drawing.Point(1, 0);
+            this.ActiveSparepart.Name = "ActiveSparepart";
+            this.ActiveSparepart.Size = new System.Drawing.Size(10, 47);
+            this.ActiveSparepart.TabIndex = 5;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(10, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(54, 48);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.btnSparepart_Click);
+            // 
+            // btnUser
+            // 
+            this.btnUser.Controls.Add(this.label7);
+            this.btnUser.Controls.Add(this.ActiveUser);
+            this.btnUser.Controls.Add(this.pictureBox6);
+            this.btnUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUser.Location = new System.Drawing.Point(3, 219);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(194, 48);
+            this.btnUser.TabIndex = 8;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(70, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 19);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "User";
+            this.label7.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // ActiveUser
+            // 
+            this.ActiveUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(229)))));
+            this.ActiveUser.Location = new System.Drawing.Point(1, 0);
+            this.ActiveUser.Name = "ActiveUser";
+            this.ActiveUser.Size = new System.Drawing.Size(10, 47);
+            this.ActiveUser.TabIndex = 5;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(10, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(54, 48);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.btnUser_Click);
+            // 
             // PanelContainer
             // 
             this.PanelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -295,6 +397,12 @@
             this.btnService.ResumeLayout(false);
             this.btnService.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.btnSparepart.ResumeLayout(false);
+            this.btnSparepart.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.btnUser.ResumeLayout(false);
+            this.btnUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -319,5 +427,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel ActiveService;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel btnSparepart;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel ActiveSparepart;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel btnUser;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel ActiveUser;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

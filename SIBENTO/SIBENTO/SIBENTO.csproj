@@ -53,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Model\Employee.cs" />
+    <Compile Include="Class\Model\Service.cs" />
+    <Compile Include="Class\Model\Sparepart.cs" />
+    <Compile Include="Class\Model\User.cs" />
     <Compile Include="Class\Utility\ApiClient.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -80,17 +83,41 @@
     <Compile Include="Menu\UCPegawai.Designer.cs">
       <DependentUpon>UCPegawai.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu\UCService.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Menu\UCService.Designer.cs">
-      <DependentUpon>UCService.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu\UCPegawaiAdd.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Menu\UCPegawaiAdd.Designer.cs">
       <DependentUpon>UCPegawaiAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\UCJasaService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\UCJasaService.Designer.cs">
+      <DependentUpon>UCJasaService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\UCSparepart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\UCSparepart.Designer.cs">
+      <DependentUpon>UCSparepart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\UCUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\UCUser.Designer.cs">
+      <DependentUpon>UCUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\UCServiceForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\UCServiceForm.Designer.cs">
+      <DependentUpon>UCServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\UCSparepartForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\UCSparepartForm.Designer.cs">
+      <DependentUpon>UCSparepartForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -98,8 +125,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu\UCService.resx">
-      <DependentUpon>UCService.cs</DependentUpon>
+    <EmbeddedResource Include="Menu\UCJasaService.resx">
+      <DependentUpon>UCJasaService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -118,6 +145,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\UCPegawaiAdd.resx">
       <DependentUpon>UCPegawaiAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\UCSparepart.resx">
+      <DependentUpon>UCSparepart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\UCUser.resx">
+      <DependentUpon>UCUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\UCServiceForm.resx">
+      <DependentUpon>UCServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\UCSparepartForm.resx">
+      <DependentUpon>UCSparepartForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
