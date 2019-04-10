@@ -83,12 +83,6 @@
     <Compile Include="Menu\UCPegawai.Designer.cs">
       <DependentUpon>UCPegawai.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu\UCPegawaiAdd.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Menu\UCPegawaiAdd.Designer.cs">
-      <DependentUpon>UCPegawaiAdd.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu\UCJasaService.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +113,12 @@
     <Compile Include="Menu\UCSparepartForm.Designer.cs">
       <DependentUpon>UCSparepartForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu\UCPegawaiForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\UCPegawaiForm.Designer.cs">
+      <DependentUpon>UCPegawaiForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\UCJasaService.resx">
       <DependentUpon>UCJasaService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\UCPegawaiForm.resx">
+      <DependentUpon>UCPegawaiForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -142,9 +145,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\UCPegawai.resx">
       <DependentUpon>UCPegawai.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu\UCPegawaiAdd.resx">
-      <DependentUpon>UCPegawaiAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\UCSparepart.resx">
       <DependentUpon>UCSparepart.cs</DependentUpon>

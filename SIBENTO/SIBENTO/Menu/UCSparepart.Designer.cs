@@ -82,7 +82,7 @@
             this.DGSparepart.AllowUserToResizeRows = false;
             this.DGSparepart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGSparepart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGSparepart.Location = new System.Drawing.Point(51, 182);
+            this.DGSparepart.Location = new System.Drawing.Point(53, 183);
             this.DGSparepart.Name = "DGSparepart";
             this.DGSparepart.ReadOnly = true;
             this.DGSparepart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

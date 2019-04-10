@@ -13,6 +13,16 @@ namespace SIBENTO
     public partial class Dashboard : Form
     {
         static Dashboard _obj;
+        SessionClass loggedUser = new SessionClass();
+
+        public class SessionClass
+        {
+            public int id { get; set; }
+            public string username { get; set; }
+            public string name { get; set; }   
+            public string password { get; set; }
+            public string role { get; set; }
+        }
 
         public static Dashboard Instance
         {
@@ -35,8 +45,41 @@ namespace SIBENTO
             InitializeComponent();
         }
 
+        public Dashboard(Dictionary<string, string> data)
+        {
+            InitializeComponent();
+            loggedUser.id = Int32.Parse(data["id"]);
+            loggedUser.username = data["username"];
+            loggedUser.name = data["name"];
+            loggedUser.role = data["role"];
+            
+            txtLogged.Text = loggedUser.name;
+            txtPanel.Text = "SIBENTO " + loggedUser.role + " Panel";
+            if(loggedUser.role != "Admin")
+            {
+                btnPegawai.Hide();
+                btnService.Hide();
+                btnSparepart.Hide();
+                btnUser.Hide();
+            }
+            //txtLogged.Text = data["name"];
+
+
+        }
+
+        //public void OnCancelUserControlOne(object sender, EventArgs e)
+        //{
+        //    MessageBox.Show("oops!");
+        //    PanelContainer.Controls.Clear();
+        //    UCDashboard dashboard = new UCDashboard();
+        //    PanelContainer.Controls.Add(dashboard);
+        //}
+
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            //UCDashboard dashboard = new UCDashboard();
+            //dashboard.Click += new EventHandler(OnCancelUserControlOne);
+
             ActiveDashboard.Visible = true;
             ActivePegawai.Visible = false;
             ActiveService.Visible = false;
@@ -50,6 +93,7 @@ namespace SIBENTO
             //UCDashboard dashboard = new UCDashboard();
             UCDashboard.Instance.Dock = DockStyle.Fill;
             PanelContainer.Controls.Add(UCDashboard.Instance);
+
             //PanelContainer.Controls.Add(UCPegawaiAdd.Instance);
             
 
@@ -82,6 +126,8 @@ namespace SIBENTO
             if (!PanelContainer.Controls.Contains(UCPegawai.Instance))
             {
                 PanelContainer.Controls.Add(UCPegawai.Instance);
+                PanelContainer.Controls.Add(UCPegawaiForm.Instance);
+                UCPegawaiForm.Instance.setEditNull();
                 UCPegawai.Instance.Dock = DockStyle.Fill;
                 UCPegawai.Instance.BringToFront();
             }
@@ -103,6 +149,7 @@ namespace SIBENTO
             {
                 PanelContainer.Controls.Add(UCJasaService.Instance);
                 PanelContainer.Controls.Add(UCServiceForm.Instance);
+                UCServiceForm.Instance.setEditNull();
                 UCJasaService.Instance.Dock = DockStyle.Fill;
                 UCJasaService.Instance.BringToFront();
             }
@@ -159,6 +206,13 @@ namespace SIBENTO
             ActiveService.Visible = false;
             ActiveSparepart.Visible = false;
             ActiveUser.Visible = true;
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Dashboard.ActiveForm.Hide();
+            Login login = new Login();
+            login.Show();
         }
     }
 }
