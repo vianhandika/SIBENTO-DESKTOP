@@ -32,6 +32,7 @@
             this.txtPanel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelTop = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.PictureBox();
             this.txtLogged = new System.Windows.Forms.Label();
             this.PanelLeft = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -57,9 +58,9 @@
             this.ActiveUser = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.PanelContainer = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
             this.PanelLeft.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.btnDashboard.SuspendLayout();
@@ -72,7 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.btnUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPanel
@@ -109,6 +109,18 @@
             this.PanelTop.Size = new System.Drawing.Size(1264, 78);
             this.PanelTop.TabIndex = 3;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.Location = new System.Drawing.Point(1187, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(65, 50);
+            this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnLogout.TabIndex = 4;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // txtLogged
             // 
             this.txtLogged.AutoSize = true;
@@ -119,6 +131,7 @@
             this.txtLogged.Size = new System.Drawing.Size(233, 32);
             this.txtLogged.TabIndex = 3;
             this.txtLogged.Text = "Name Employee";
+            this.txtLogged.Click += new System.EventHandler(this.txtLogged_Click);
             // 
             // PanelLeft
             // 
@@ -381,18 +394,6 @@
             this.PanelContainer.Size = new System.Drawing.Size(1067, 603);
             this.PanelContainer.TabIndex = 5;
             // 
-            // btnLogout
-            // 
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(1187, 12);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(65, 50);
-            this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnLogout.TabIndex = 4;
-            this.btnLogout.TabStop = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -413,6 +414,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelTop.ResumeLayout(false);
             this.PanelTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
             this.PanelLeft.ResumeLayout(false);
             this.PanelLeft.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -431,7 +433,6 @@
             this.btnUser.ResumeLayout(false);
             this.btnUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
             this.ResumeLayout(false);
 
         }

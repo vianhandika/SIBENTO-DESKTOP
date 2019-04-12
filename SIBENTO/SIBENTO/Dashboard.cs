@@ -14,6 +14,7 @@ namespace SIBENTO
     {
         static Dashboard _obj;
         SessionClass loggedUser = new SessionClass();
+        public int ID;
 
         public class SessionClass
         {
@@ -52,7 +53,7 @@ namespace SIBENTO
             loggedUser.username = data["username"];
             loggedUser.name = data["name"];
             loggedUser.role = data["role"];
-            
+            ID = loggedUser.id;
             txtLogged.Text = loggedUser.name;
             txtPanel.Text = "SIBENTO " + loggedUser.role + " Panel";
             if(loggedUser.role != "Admin")
@@ -213,6 +214,23 @@ namespace SIBENTO
             Dashboard.ActiveForm.Hide();
             Login login = new Login();
             login.Show();
+        }
+
+        private void txtLogged_Click(object sender, EventArgs e)
+        {
+            if (!PanelContainer.Controls.Contains(UCProfile.Instance))
+            {
+                
+                UCProfile profile = new UCProfile(loggedUser.id);
+                PanelContainer.Controls.Add(profile);
+                profile.Dock = DockStyle.Fill;
+                profile.BringToFront();
+
+            }
+            else
+            {
+                UCProfile.Instance.BringToFront();
+            }
         }
     }
 }

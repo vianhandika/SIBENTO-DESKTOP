@@ -119,6 +119,12 @@
     <Compile Include="Menu\UCPegawaiForm.Designer.cs">
       <DependentUpon>UCPegawaiForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProfile.Designer.cs">
+      <DependentUpon>UCProfile.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\UCSparepartForm.resx">
       <DependentUpon>UCSparepartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProfile.resx">
+      <DependentUpon>UCProfile.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
