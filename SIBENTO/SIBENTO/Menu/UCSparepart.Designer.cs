@@ -33,6 +33,8 @@
             this.btnAddSparepart = new System.Windows.Forms.Button();
             this.DGSparepart = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGSparepart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,6 +49,7 @@
             this.btnDelSparepart.TabIndex = 15;
             this.btnDelSparepart.Text = "DELETE";
             this.btnDelSparepart.UseVisualStyleBackColor = true;
+            this.btnDelSparepart.Click += new System.EventHandler(this.btnDelSparepart_Click);
             // 
             // btnEdtSpareaprt
             // 
@@ -59,6 +62,7 @@
             this.btnEdtSpareaprt.TabIndex = 14;
             this.btnEdtSpareaprt.Text = "EDIT";
             this.btnEdtSpareaprt.UseVisualStyleBackColor = true;
+            this.btnEdtSpareaprt.Click += new System.EventHandler(this.btnEdtSpareaprt_Click);
             // 
             // btnAddSparepart
             // 
@@ -82,7 +86,7 @@
             this.DGSparepart.AllowUserToResizeRows = false;
             this.DGSparepart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGSparepart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGSparepart.Location = new System.Drawing.Point(51, 182);
+            this.DGSparepart.Location = new System.Drawing.Point(53, 183);
             this.DGSparepart.Name = "DGSparepart";
             this.DGSparepart.ReadOnly = true;
             this.DGSparepart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -99,9 +103,34 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Sparepart";
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(591, 118);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(100, 50);
+            this.btnRefresh.TabIndex = 16;
+            this.btnRefresh.Text = "REFRESH";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(53, 130);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(289, 27);
+            this.txtSearch.TabIndex = 17;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
             // UCSparepart
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDelSparepart);
             this.Controls.Add(this.btnEdtSpareaprt);
             this.Controls.Add(this.btnAddSparepart);
@@ -122,5 +151,7 @@
         private System.Windows.Forms.Button btnAddSparepart;
         private System.Windows.Forms.DataGridView DGSparepart;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }

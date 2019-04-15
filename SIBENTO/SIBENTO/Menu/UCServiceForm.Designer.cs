@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCServiceForm));
             this.btnSaveService = new System.Windows.Forms.Button();
             this.txtService = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHarga = new System.Windows.Forms.TextBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSaveService
@@ -92,9 +95,21 @@
             this.txtHarga.Size = new System.Drawing.Size(256, 20);
             this.txtHarga.TabIndex = 58;
             // 
+            // btnClose
+            // 
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(100, 41);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(44, 38);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 59;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // UCServiceForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtHarga);
             this.Controls.Add(this.btnSaveService);
             this.Controls.Add(this.txtService);
@@ -103,6 +118,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UCServiceForm";
             this.Size = new System.Drawing.Size(1070, 603);
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,5 +132,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHarga;
+        private System.Windows.Forms.PictureBox btnClose;
     }
 }

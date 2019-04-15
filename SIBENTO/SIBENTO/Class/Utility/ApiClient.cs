@@ -24,6 +24,27 @@ namespace SIBENTO.Class.Utility
             FormUrlEncodedContent content = new FormUrlEncodedContent(body);
 
             HttpResponseMessage response = await client.PostAsync(url, content);
+            
+            string jsonstring = await response.Content.ReadAsStringAsync();
+
+            return JObject.Parse(jsonstring);
+        }
+
+        public static async Task<JObject> SendPutRequest(Dictionary<string, string> body, string url)
+        {
+            FormUrlEncodedContent content = new FormUrlEncodedContent(body);
+
+            HttpResponseMessage response = await client.PutAsync(url, content);
+
+            string jsonstring = await response.Content.ReadAsStringAsync();
+
+            return JObject.Parse(jsonstring);
+        }
+
+
+        public static async Task<JObject> SendDelRequest(string url)
+        {
+            HttpResponseMessage response = await client.DeleteAsync(url);
             string jsonstring = await response.Content.ReadAsStringAsync();
 
             return JObject.Parse(jsonstring);

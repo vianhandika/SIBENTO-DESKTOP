@@ -33,6 +33,8 @@
             this.btnAddService = new System.Windows.Forms.Button();
             this.DGService = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGService)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,6 +49,7 @@
             this.btnDelService.TabIndex = 10;
             this.btnDelService.Text = "DELETE";
             this.btnDelService.UseVisualStyleBackColor = true;
+            this.btnDelService.Click += new System.EventHandler(this.btnDelService_Click);
             // 
             // btnEdtService
             // 
@@ -59,6 +62,7 @@
             this.btnEdtService.TabIndex = 9;
             this.btnEdtService.Text = "EDIT";
             this.btnEdtService.UseVisualStyleBackColor = true;
+            this.btnEdtService.Click += new System.EventHandler(this.btnEdtService_Click);
             // 
             // btnAddService
             // 
@@ -82,7 +86,7 @@
             this.DGService.AllowUserToResizeRows = false;
             this.DGService.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGService.Location = new System.Drawing.Point(51, 182);
+            this.DGService.Location = new System.Drawing.Point(53, 183);
             this.DGService.Name = "DGService";
             this.DGService.ReadOnly = true;
             this.DGService.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -99,9 +103,34 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Jasa Service";
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(591, 118);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(100, 50);
+            this.btnRefresh.TabIndex = 11;
+            this.btnRefresh.Text = "REFRESH";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(53, 141);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(289, 27);
+            this.txtSearch.TabIndex = 12;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
             // UCJasaService
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDelService);
             this.Controls.Add(this.btnEdtService);
             this.Controls.Add(this.btnAddService);
@@ -122,5 +151,7 @@
         private System.Windows.Forms.Button btnAddService;
         private System.Windows.Forms.DataGridView DGService;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }

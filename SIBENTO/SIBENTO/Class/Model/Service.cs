@@ -12,6 +12,13 @@ namespace SIBENTO.Class.Model
         public string name_service { get; set; }
         public string price_service { get; set; }
 
+        public Service()
+        {
+            this.id_service = id_service;
+            this.name_service = name_service;
+            this.price_service = price_service;
+        }
+
         public Service(int id_service, string name_service, string price_service)
         {
             this.id_service = id_service;

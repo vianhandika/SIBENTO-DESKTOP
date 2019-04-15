@@ -17,6 +17,8 @@ namespace SIBENTO
     public partial class Login : Form
     {
         static HttpClient client = new HttpClient();
+
+
         
 
         public Login()
@@ -26,15 +28,15 @@ namespace SIBENTO
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //if (txtUsername.Text.ToString().Trim() != "" && txtPassword.Text.ToString().Trim() != "")
-            //{
-            //   GetLogin(txtUsername.Text.ToString(), txtPassword.Text.ToString());
+            if (txtUsername.Text.ToString().Trim() != "" && txtPassword.Text.ToString().Trim() != "")
+            {
+               GetLogin(txtUsername.Text.ToString(), txtPassword.Text.ToString());
 
 
-            //}
-            Login.ActiveForm.Hide();
-            Dashboard dashboard = new Dashboard();
-            dashboard.ShowDialog();
+            }
+           // Login.ActiveForm.Hide();
+           // Dashboard dashboard = new Dashboard();
+            //dashboard.ShowDialog();
 
         }
 
@@ -53,11 +55,18 @@ namespace SIBENTO
                 var a = await response.Content.ReadAsStringAsync();
                 Console.WriteLine($"{a}");
                 Data data = new Data(a);
-                Console.WriteLine($"{data.name}");
+                Console.WriteLine($"{data.id}");
                 //var b = JsonConvert.DeserializeObject<Data>(a);
                 //Console.WriteLine($"{b.username}");
+                Dictionary<string, string> values = new Dictionary<string, string>();
+
+                values.Add("id", data.id.ToString());
+                values.Add("username", data.username);
+                values.Add("name", data.name);
+                values.Add("role", data.role);
+
                 Login.ActiveForm.Hide();
-                Dashboard dashboard = new Dashboard();
+                Dashboard dashboard = new Dashboard(values);
                 dashboard.ShowDialog();
             }
             else

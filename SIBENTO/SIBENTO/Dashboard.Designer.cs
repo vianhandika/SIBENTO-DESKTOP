@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtPanel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelTop = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.PictureBox();
+            this.txtLogged = new System.Windows.Forms.Label();
             this.PanelLeft = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -58,6 +60,7 @@
             this.PanelContainer = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
             this.PanelLeft.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.btnDashboard.SuspendLayout();
@@ -72,16 +75,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // txtPanel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(144, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "SIBENTO Panel";
+            this.txtPanel.AutoSize = true;
+            this.txtPanel.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPanel.ForeColor = System.Drawing.Color.White;
+            this.txtPanel.Location = new System.Drawing.Point(144, 24);
+            this.txtPanel.Name = "txtPanel";
+            this.txtPanel.Size = new System.Drawing.Size(201, 32);
+            this.txtPanel.TabIndex = 1;
+            this.txtPanel.Text = "SIBENTO Panel";
             // 
             // pictureBox1
             // 
@@ -96,13 +99,39 @@
             // PanelTop
             // 
             this.PanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(229)))));
+            this.PanelTop.Controls.Add(this.btnLogout);
+            this.PanelTop.Controls.Add(this.txtLogged);
             this.PanelTop.Controls.Add(this.pictureBox1);
-            this.PanelTop.Controls.Add(this.label1);
+            this.PanelTop.Controls.Add(this.txtPanel);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTop.Location = new System.Drawing.Point(0, 0);
             this.PanelTop.Name = "PanelTop";
             this.PanelTop.Size = new System.Drawing.Size(1264, 78);
             this.PanelTop.TabIndex = 3;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.Location = new System.Drawing.Point(1187, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(65, 50);
+            this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnLogout.TabIndex = 4;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // txtLogged
+            // 
+            this.txtLogged.AutoSize = true;
+            this.txtLogged.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogged.ForeColor = System.Drawing.Color.White;
+            this.txtLogged.Location = new System.Drawing.Point(881, 24);
+            this.txtLogged.Name = "txtLogged";
+            this.txtLogged.Size = new System.Drawing.Size(233, 32);
+            this.txtLogged.TabIndex = 3;
+            this.txtLogged.Text = "Name Employee";
+            this.txtLogged.Click += new System.EventHandler(this.txtLogged_Click);
             // 
             // PanelLeft
             // 
@@ -385,6 +414,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelTop.ResumeLayout(false);
             this.PanelTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
             this.PanelLeft.ResumeLayout(false);
             this.PanelLeft.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -408,7 +438,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel PanelTop;
         private System.Windows.Forms.Panel PanelLeft;
@@ -435,5 +465,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel ActiveUser;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label txtLogged;
+        private System.Windows.Forms.PictureBox btnLogout;
     }
 }

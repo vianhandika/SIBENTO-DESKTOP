@@ -16,6 +16,16 @@ namespace SIBENTO.Class.Model
         public string role { get; set; }
         public string branch { get; set; }
 
+        public Employee()
+        {
+            this.id = id;
+            this.name = name;
+            this.phone_number = phone_number;
+            this.address = address;
+            this.salary = salary;
+            this.role = role;
+            this.branch = branch;
+        }
         public Employee(int id, string name, string phone_number, string address, string salary, string role, string branch)
         {
             this.id = id;
