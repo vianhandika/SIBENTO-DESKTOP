@@ -68,8 +68,13 @@ namespace SIBENTO
 
         private async Task EditServiceAsync(Dictionary<string, string> body, int id)
         {
+<<<<<<< HEAD
             Debug.WriteLine("http://sibento.yafetrakan.com/api/service/" + id);
             JObject json = await ApiClient.SendPutRequest(body, "http://sibento.yafetrakan.com/api/service/" + id);
+=======
+            Debug.WriteLine("https://sibento.yafetrakan.com/api/service/" + id);
+            JObject json = await ApiClient.SendPutRequest(body, "https://sibento.yafetrakan.com/api/service/" + id);
+>>>>>>> 26982cd0da3826b7f826cc7426f55485af472e94
 
 
             if (json.ContainsKey("error") || json.ContainsKey("errors"))

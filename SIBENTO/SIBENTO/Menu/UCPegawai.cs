@@ -43,7 +43,11 @@ namespace SIBENTO
         public UCPegawai()
         {
             InitializeComponent();
+<<<<<<< HEAD
             client.BaseAddress = new Uri("http://sibento.yafetrakan.com/");
+=======
+            client.BaseAddress = new Uri("https://sibento.yafetrakan.com/");
+>>>>>>> 26982cd0da3826b7f826cc7426f55485af472e94
             loadEmployee();
             //LoadEmployeeAsync();
 
@@ -208,7 +212,11 @@ namespace SIBENTO
 
         private async Task DelEmployeeAsync(int id)
         {
+<<<<<<< HEAD
             JObject json = await ApiClient.SendDelRequest("http://sibento.yafetrakan.com/api/employee/" + id);
+=======
+            JObject json = await ApiClient.SendDelRequest("https://sibento.yafetrakan.com/api/employee/" + id);
+>>>>>>> 26982cd0da3826b7f826cc7426f55485af472e94
             Debug.WriteLine(json);
         }
 

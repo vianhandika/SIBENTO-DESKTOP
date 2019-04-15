@@ -53,9 +53,13 @@ namespace SIBENTO
             if (response.IsSuccessStatusCode)
             {
                 var a = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"{a}");
+                //Console.WriteLine($"{a}");
                 Data data = new Data(a);
+<<<<<<< HEAD
                 Console.WriteLine($"{data.id}");
+=======
+                //Console.WriteLine($"{data.id}");
+>>>>>>> 26982cd0da3826b7f826cc7426f55485af472e94
                 //var b = JsonConvert.DeserializeObject<Data>(a);
                 //Console.WriteLine($"{b.username}");
                 Dictionary<string, string> values = new Dictionary<string, string>();
