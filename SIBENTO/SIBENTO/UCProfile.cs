@@ -44,13 +44,8 @@ namespace SIBENTO
         }
         private async Task EditPasswowrdAsync(Dictionary<string, string> body, int id)
         {
-<<<<<<< HEAD
             Debug.WriteLine("http://sibento.yafetrakan.com/api/employee/" + id);
             JObject json = await ApiClient.SendPutRequest(body, "http://sibento.yafetrakan.com/api/user/putchangepassword/" + id);
-=======
-            Debug.WriteLine("https://sibento.yafetrakan.com/api/employee/" + id);
-            JObject json = await ApiClient.SendPutRequest(body, "https://sibento.yafetrakan.com/api/user/putchangepassword/" + id);
->>>>>>> 26982cd0da3826b7f826cc7426f55485af472e94
            // HttpResponseMessage response = await client.PutAsJsonAsync($"user/changepassword/" +id, body);
         }
 

@@ -44,11 +44,7 @@ namespace SIBENTO
         {
             InitializeComponent();
             //LoadServiceAsync();
-<<<<<<< HEAD
             client.BaseAddress = new Uri("http://sibento.yafetrakan.com/");
-=======
-            client.BaseAddress = new Uri("https://sibento.yafetrakan.com/");
->>>>>>> 26982cd0da3826b7f826cc7426f55485af472e94
             loadService();
         }
 
@@ -145,11 +141,7 @@ namespace SIBENTO
 
         private async Task DelServiceAsync(int id)
         {
-<<<<<<< HEAD
             JObject json = await ApiClient.SendDelRequest("http://sibento.yafetrakan.com/api/service/" + id);
-=======
-            JObject json = await ApiClient.SendDelRequest("https://sibento.yafetrakan.com/api/service/" + id);
->>>>>>> 26982cd0da3826b7f826cc7426f55485af472e94
             Debug.WriteLine(json);
         }
 
@@ -158,7 +150,15 @@ namespace SIBENTO
             int i = DGService.CurrentCell.RowIndex;
 
             int id = Int32.Parse(DGService[0, i].Value.ToString());
-            DelServiceAsync(id);
+            if (MessageBox.Show("Anda Yakin Akan Menghapus Data Ini?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                DelServiceAsync(id);
+            }
+            else
+            {
+                MessageBox.Show("Batal Menghapus", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
             loadService();
 
         }

@@ -70,7 +70,6 @@ D:\SEMESTER 6\P3L\HELL\GitHub\SIBENTO-DESKTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.
 D:\SEMESTER 6\P3L\HELL\GitHub\SIBENTO-DESKTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.pdb
 D:\SEMESTER 6\P3L\HELL\GitHub\SIBENTO-DESKTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCPegawaiForm.resources
 D:\SEMESTER 6\P3L\HELL\GitHub\SIBENTO-DESKTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCProfile.resources
-<<<<<<< HEAD
 C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\SIBENTO.exe.config
 C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\SIBENTO.exe
 C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\SIBENTO.pdb
@@ -123,5 +122,3 @@ D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SI
 D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.csproj.CopyComplete
 D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.exe
 D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.pdb
-=======
->>>>>>> 26982cd0da3826b7f826cc7426f55485af472e94

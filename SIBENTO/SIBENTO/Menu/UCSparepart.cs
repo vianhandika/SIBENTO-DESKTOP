@@ -101,7 +101,8 @@ namespace SIBENTO
                                  placement_position = dr["placement_position"].ToString(),
                                  placement_place = dr["placement_place"].ToString(),
                                  placement_number = dr["placement_number"].ToString(),
-                                 image = dr["image"].ToString()
+                                 image = dr["image"].ToString(),
+                                 //compability = dr["compability"].ToString()
                             }).ToList();
 
             t.Columns.Remove("type");
@@ -112,6 +113,7 @@ namespace SIBENTO
             t.Columns.Remove("placement_place");
             t.Columns.Remove("placement_number");
             t.Columns.Remove("image");
+            //t.Columns.Remove("compability");
 
             DGSparepart.Columns[0].HeaderText = "ID";
             DGSparepart.Columns[0].Width = 150;

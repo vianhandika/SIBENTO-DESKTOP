@@ -30,9 +30,7 @@ namespace SIBENTO
         {
             if (txtUsername.Text.ToString().Trim() != "" && txtPassword.Text.ToString().Trim() != "")
             {
-               GetLogin(txtUsername.Text.ToString(), txtPassword.Text.ToString());
-
-
+                GetLogin(txtUsername.Text.ToString(), txtPassword.Text.ToString());
             }
            // Login.ActiveForm.Hide();
            // Dashboard dashboard = new Dashboard();
@@ -53,13 +51,9 @@ namespace SIBENTO
             if (response.IsSuccessStatusCode)
             {
                 var a = await response.Content.ReadAsStringAsync();
-                //Console.WriteLine($"{a}");
+                Console.WriteLine($"{a}");
                 Data data = new Data(a);
-<<<<<<< HEAD
                 Console.WriteLine($"{data.id}");
-=======
-                //Console.WriteLine($"{data.id}");
->>>>>>> 26982cd0da3826b7f826cc7426f55485af472e94
                 //var b = JsonConvert.DeserializeObject<Data>(a);
                 //Console.WriteLine($"{b.username}");
                 Dictionary<string, string> values = new Dictionary<string, string>();
@@ -76,6 +70,7 @@ namespace SIBENTO
             else
             {
                 Console.WriteLine("Gagal");
+                MessageBox.Show("Gagal Login, Silahkan Coba Lagi");
             }
         }
 
@@ -110,6 +105,11 @@ namespace SIBENTO
             public static string username;
             public static string name;
             public static string role;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

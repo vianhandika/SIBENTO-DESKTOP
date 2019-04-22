@@ -56,12 +56,12 @@
             // 
             // txtNama
             // 
-            this.txtNama.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtNama.AutoSize = true;
             this.txtNama.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNama.Location = new System.Drawing.Point(497, 300);
+            this.txtNama.Location = new System.Drawing.Point(488, 278);
             this.txtNama.Name = "txtNama";
+            this.txtNama.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtNama.Size = new System.Drawing.Size(76, 25);
             this.txtNama.TabIndex = 2;
             this.txtNama.Text = "Nama";
@@ -69,11 +69,10 @@
             // 
             // txtRole
             // 
-            this.txtRole.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRole.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtRole.AutoSize = true;
             this.txtRole.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRole.Location = new System.Drawing.Point(507, 364);
+            this.txtRole.Location = new System.Drawing.Point(497, 342);
             this.txtRole.Name = "txtRole";
             this.txtRole.Size = new System.Drawing.Size(55, 25);
             this.txtRole.TabIndex = 3;

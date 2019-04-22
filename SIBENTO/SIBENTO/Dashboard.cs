@@ -104,11 +104,7 @@ namespace SIBENTO
 
             UCDashboard.Instance.transactionData(values);
             UCDashboard.Instance.Dock = DockStyle.Fill;
-<<<<<<< HEAD
             UCDashboard.Instance.BringToFront();
-=======
-            PanelContainer.Controls.Add(UCDashboard.Instance);
->>>>>>> 26982cd0da3826b7f826cc7426f55485af472e94
 
             //PanelContainer.Controls.Add(UCPegawaiAdd.Instance);
 

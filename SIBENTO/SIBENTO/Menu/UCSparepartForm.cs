@@ -264,7 +264,10 @@ namespace SIBENTO
             Dictionary<string, string> values = new Dictionary<string, string>();
             string placement = cmbPosition.SelectedValue.ToString()+"-"+cmbPlace.SelectedValue.ToString()+"-"+txtNomer.Text;
             byte[] byteImg = ImageToByteArray(imgBox.Image, imgBox);
-            string img = Convert.ToString(byteImg);
+            string img = Convert.ToBase64String(byteImg);
+            //MemoryStream ms = new MemoryStream();
+            //imgBox.Image.Save(ms, ImageFormat.Jpeg);
+            //byte[] buff = ms.GetBuffer();
             Debug.WriteLine(img);
 
             values.Add("id_sparepart", txtKodeSparepart.Text);

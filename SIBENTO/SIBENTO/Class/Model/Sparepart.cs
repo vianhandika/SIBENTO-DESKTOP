@@ -21,6 +21,8 @@ namespace SIBENTO.Class.Model
         public string placement_place { get; set; }
         public string placement_number { get; set; }
         public string image { get; set; }
+        //public string copmpabilty { get; set; }
+        //public object compability { get; set; }
 
         public Sparepart()
         {
@@ -37,6 +39,7 @@ namespace SIBENTO.Class.Model
             this.placement_place = placement_place;
             this.placement_number = placement_number;
             this.image = image;
+            //this.compability = compability;
         }
 
         public Sparepart(string id, string name, string brand, string type, string stock, string min_stock, string buy_price, 
@@ -56,6 +59,7 @@ namespace SIBENTO.Class.Model
             this.placement_place = placement_place;
             this.placement_number = placement_number;
             this.image = image;
+            //this.compability = compability;
         }
 
         public override bool Equals(object obj)
@@ -80,6 +84,7 @@ namespace SIBENTO.Class.Model
             this.placement_place = sparepart.placement_place;
             this.placement_number = sparepart.placement_number;
             this.image = sparepart.image;
+            //this.compability = sparepart.compability;
         }
     }
 }
