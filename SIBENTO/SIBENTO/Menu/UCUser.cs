@@ -46,7 +46,7 @@ namespace SIBENTO
 
         private async Task LoadUserAsync()
         {
-            JObject json = await ApiClient.SendGetRequest("https://sibento.yafetrakan.com/api/user");
+            JObject json = await ApiClient.SendGetRequest("http://sibento.yafetrakan.com/api/user");
 
             JToken arrUser = json.GetValue("data");
             if (json.ContainsKey("error") || json.ContainsKey("errors"))

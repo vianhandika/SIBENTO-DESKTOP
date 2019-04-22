@@ -70,3 +70,55 @@ D:\SEMESTER 6\P3L\HELL\GitHub\SIBENTO-DESKTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.
 D:\SEMESTER 6\P3L\HELL\GitHub\SIBENTO-DESKTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.pdb
 D:\SEMESTER 6\P3L\HELL\GitHub\SIBENTO-DESKTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCPegawaiForm.resources
 D:\SEMESTER 6\P3L\HELL\GitHub\SIBENTO-DESKTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCProfile.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\SIBENTO.exe.config
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\SIBENTO.exe
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\SIBENTO.pdb
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\Newtonsoft.Json.dll
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\System.Net.Http.Formatting.dll
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\Newtonsoft.Json.pdb
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\Newtonsoft.Json.xml
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\bin\Debug\System.Net.Http.Formatting.xml
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.csprojAssemblyReference.cache
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.Dashboard.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.Login.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCJasaService.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCPegawaiForm.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.Properties.Resources.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCDashboard.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCPegawai.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCSparepart.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCUser.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCServiceForm.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCSparepartForm.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCProfile.resources
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.csproj.GenerateResource.cache
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.csproj.CopyComplete
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.exe
+C:\xampp\htdocs\SIBEBNTO DEKSTOP\SIBENTO\SIBENTO\obj\Debug\SIBENTO.pdb
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\bin\Debug\SIBENTO.exe.config
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\bin\Debug\SIBENTO.exe
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\bin\Debug\SIBENTO.pdb
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\bin\Debug\Newtonsoft.Json.dll
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\bin\Debug\System.Net.Http.Formatting.dll
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\bin\Debug\Newtonsoft.Json.pdb
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\bin\Debug\Newtonsoft.Json.xml
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\bin\Debug\System.Net.Http.Formatting.xml
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.csprojAssemblyReference.cache
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.Dashboard.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.Login.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCJasaService.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCPegawaiForm.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.Properties.Resources.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCDashboard.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCPegawai.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCSparepart.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCUser.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCServiceForm.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCSparepartForm.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.UCProfile.resources
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.csproj.GenerateResource.cache
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.csproj.CoreCompileInputs.cache
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.csproj.CopyComplete
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.exe
+D:\Document\Kuliah\Projek Pengembangan Perangkat Lunak\Projek Desktop\SIBENTO\SIBENTO\obj\Debug\SIBENTO.pdb

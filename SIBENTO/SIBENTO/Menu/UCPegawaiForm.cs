@@ -59,18 +59,13 @@ namespace SIBENTO
             txtAddressEmployee.Text = data["address"];
             cmbBranchEmployee.Text = data["branch"];
             cmbRoleEmployee.Text = data["role"];
-
-
         }
 
         public UCPegawaiForm()
         {
             InitializeComponent();
-            client.BaseAddress = new Uri("https://sibento.yafetrakan.com/");
+            client.BaseAddress = new Uri("http://sibento.yafetrakan.com/");
             dropdownLoad();
-           
-
-
         }
 
         private void UCPegawaiForm_Load(Object sender, EventArgs e)
@@ -83,10 +78,6 @@ namespace SIBENTO
 
         private async void dropdownLoad()
         {
- 
-
-           
-          
             cmbBranchEmployee.DataSource = await GetCabang();
             cmbBranchEmployee.ValueMember = "id";
             cmbBranchEmployee.DisplayMember = "name";
@@ -142,7 +133,7 @@ namespace SIBENTO
 
         private async Task AddEmployeeAsync(Dictionary<string, string> body)
         {
-            JObject json = await ApiClient.SendPostRequest(body, "https://sibento.yafetrakan.com/api/employee");
+            JObject json = await ApiClient.SendPostRequest(body, "http://sibento.yafetrakan.com/api/employee");
 
             if (json.ContainsKey("error") || json.ContainsKey("errors"))
             {
@@ -162,8 +153,8 @@ namespace SIBENTO
 
         private async Task EditEmployeeAsync(Dictionary<string, string> body, int id)
         {
-            Debug.WriteLine("https://sibento.yafetrakan.com/api/employee/" + id);
-            JObject json = await ApiClient.SendPutRequest(body, "https://sibento.yafetrakan.com/api/employee/"+id);
+            Debug.WriteLine("http://sibento.yafetrakan.com/api/employee/" + id);
+            JObject json = await ApiClient.SendPutRequest(body, "http://sibento.yafetrakan.com/api/employee/"+id);
 
 
             if (json.ContainsKey("error") || json.ContainsKey("errors"))
@@ -229,23 +220,35 @@ namespace SIBENTO
             values.Add("branch", cmbBranchEmployee.SelectedValue.ToString());
             values.Add("role", cmbRoleEmployee.SelectedValue.ToString());
 
-            if (ID != 0)
+            if (!string.IsNullOrWhiteSpace(txtNameEmploye.Text) && !string.IsNullOrWhiteSpace(txtSalaryEmployee.Text)
+                && !string.IsNullOrWhiteSpace(txtAddressEmployee.Text) && !string.IsNullOrWhiteSpace(txtNoTelpEmployee.Text))
             {
-                Debug.WriteLine("edit");
-                EditEmployeeAsync(values, ID);
+                Debug.WriteLine("Inputan Tidak Ada Yang Kosong");
+                if (ID != 0)
+                {
+                    Debug.WriteLine("edit");
+                    EditEmployeeAsync(values, ID);
+                    MessageBox.Show("Data Telah Diedit");
+                }
+                else
+                {
+                    Debug.WriteLine("tambah");
+
+                    String usernameGenerate = txtNameEmploye.Text.ToLower();
+                    usernameGenerate = usernameGenerate.Split(' ').FirstOrDefault();
+                    usernameGenerate = usernameGenerate + random.Next(100).ToString();
+                    values.Add("username", usernameGenerate);
+                    AddEmployeeAsync(values);
+                    MessageBox.Show("Data Telah Ditambahkan");
+                }
+
+                clearInput();
             }
             else
             {
-                Debug.WriteLine("tambah");
-
-                String usernameGenerate = txtNameEmploye.Text.ToLower();
-                usernameGenerate = usernameGenerate.Split(' ').FirstOrDefault();
-                usernameGenerate = usernameGenerate + random.Next(100).ToString();
-                values.Add("username", usernameGenerate);
-                AddEmployeeAsync(values);
+                Debug.WriteLine("Inputan Ada Yang Kosong");
+                MessageBox.Show("Masih Ada Inputan Yang Kosong Silahkan Cek Kembali");
             }
-           
-            clearInput();
         }
         public void setEditNull()
         {

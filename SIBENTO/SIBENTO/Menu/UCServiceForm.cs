@@ -42,12 +42,12 @@ namespace SIBENTO
         public UCServiceForm()
         {
             InitializeComponent();
-            client.BaseAddress = new Uri("https://sibento.yafetrakan.com/");
+            client.BaseAddress = new Uri("http://sibento.yafetrakan.com/");
         }
 
         private async Task AddServiceAsync(Dictionary<string, string> body)
         {
-            JObject json = await ApiClient.SendPostRequest(body, "https://sibento.yafetrakan.com/api/service");
+            JObject json = await ApiClient.SendPostRequest(body, "http://sibento.yafetrakan.com/api/service");
 
             if (json.ContainsKey("error") || json.ContainsKey("errors"))
             {
@@ -68,8 +68,8 @@ namespace SIBENTO
 
         private async Task EditServiceAsync(Dictionary<string, string> body, int id)
         {
-            Debug.WriteLine("https://sibento.yafetrakan.com/api/service/" + id);
-            JObject json = await ApiClient.SendPutRequest(body, "https://sibento.yafetrakan.com/api/service/" + id);
+            Debug.WriteLine("http://sibento.yafetrakan.com/api/service/" + id);
+            JObject json = await ApiClient.SendPutRequest(body, "http://sibento.yafetrakan.com/api/service/" + id);
 
 
             if (json.ContainsKey("error") || json.ContainsKey("errors"))
@@ -90,9 +90,7 @@ namespace SIBENTO
 
             }
         }
-
-
-
+                
         public void disableInput()
         {
             txtService.Enabled = false;
@@ -113,25 +111,33 @@ namespace SIBENTO
 
         private void btnSaveService_Click(object sender, EventArgs e)
         {
-            Random random = new Random();
+            //Random random = new Random();
             Dictionary<string, string> values = new Dictionary<string, string>();
 
             values.Add("name_service", txtService.Text);
             values.Add("price_service", txtHarga.Text);
 
-            if (ID != 0)
+            if (!string.IsNullOrWhiteSpace(txtHarga.Text) && !string.IsNullOrWhiteSpace(txtService.Text))
             {
-                Debug.WriteLine("edit");
-                EditServiceAsync(values, ID);
+                if (ID != 0)
+                {
+                    Debug.WriteLine("edit");
+                    EditServiceAsync(values, ID);
+                    MessageBox.Show("Data Telah Diedit");
+                }
+                else
+                {
+                    Debug.WriteLine("tambah");
+                    AddServiceAsync(values);
+                    MessageBox.Show("Data Telah Ditambahkan");
+                }
+
+                clearInput();
             }
             else
             {
-                Debug.WriteLine("tambah");
-                AddServiceAsync(values);
+                MessageBox.Show("Masih Ada Inputan Yang Kosong Silahkan Cek Kembali");
             }
-
-            clearInput();
-          
         }
         public void setEditNull()
         {

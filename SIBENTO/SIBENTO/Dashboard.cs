@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SIBENTO.Class.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -89,14 +90,24 @@ namespace SIBENTO
 
             _obj = this;
             //btnPegawai.Hide();
+            PanelContainer.Controls.Add(UCDashboard.Instance);
 
             //UCPegawai pegawai=new UCPegawai();
             //UCDashboard dashboard = new UCDashboard();
+            Dictionary<string, string> values = new Dictionary<string, string>();
+            //int i = DGService.CurrentCell.RowIndex;
+            //int id = Int32.Parse(DGService[0, i].Value.ToString());
+
+            //Employee dataSelected = ListService.Where(obj => obj.id_service == id).First();
+            values.Add("name", loggedUser.name);
+            values.Add("role", loggedUser.role);
+
+            UCDashboard.Instance.transactionData(values);
             UCDashboard.Instance.Dock = DockStyle.Fill;
-            PanelContainer.Controls.Add(UCDashboard.Instance);
+            UCDashboard.Instance.BringToFront();
 
             //PanelContainer.Controls.Add(UCPegawaiAdd.Instance);
-            
+
 
         }
 
@@ -105,7 +116,20 @@ namespace SIBENTO
         {
             if (!PanelContainer.Controls.Contains(UCDashboard.Instance))
             {
-                PanelContainer.Controls.Add(UCDashboard.Instance);
+                Dictionary<string, string> values = new Dictionary<string, string>();
+                //int i = DGService.CurrentCell.RowIndex;
+                //int id = Int32.Parse(DGService[0, i].Value.ToString());
+
+                //Employee dataSelected = ListService.Where(obj => obj.id_service == id).First();
+                values.Add("name", loggedUser.name);
+                values.Add("role", loggedUser.role);
+
+                UCDashboard.Instance.transactionData(values);
+                //UCServiceForm.Instance.BringToFront();
+
+                //UCDashboard dashboard = new UCDashboard();
+                //PanelContainer.Controls.Add(dashboard);
+                //PanelContainer.Controls.Add(UCDashboard.Instance);
                 UCDashboard.Instance.Dock = DockStyle.Fill;
                 UCDashboard.Instance.BringToFront();
             }
